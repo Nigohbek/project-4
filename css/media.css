@@ -1,0 +1,201 @@
+/* @media screen and ( max-width: 1440px){}  Notebook */
+/* @media screen and ( max-width: 1320px){}  Notebook */
+/* @media screen and ( max-width: 1290px){}  Notebook */
+/* @media screen and ( max-width: 1200px){}  Notebook */
+/* @media screen and ( max-width: 1440px){}  Notebook */
+@media screen and ( max-width: 1024px) {     
+    .films__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .collection__cards {
+        overflow: auto;
+        column-gap: 30px;
+        justify-content: unset;
+    }
+
+    .collection__card {
+        flex-shrink: 0;
+    }
+
+    *::-webkit-scrollbar {
+        height: 0;
+    }
+} 
+/* @media screen and ( max-width: 992px){}   Ipad */
+@media screen and ( max-width: 768px){
+
+    .nav {
+        padding: 20px 0;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__menu {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: rgba(88, 85, 85, 0.511);
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .nav__line {
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background: var(--text);
+        border-radius: 15px;
+        transition: 500ms;
+    }
+
+    .nav__line:nth-of-type(2) {
+        transform: translateY(-10px);
+        width: 30px;
+    }
+
+    .nav__line:nth-of-type(3) {
+        transform: translateY(10px);
+        width: 20px;
+    }
+
+    .nav__menu:hover .nav__line:nth-of-type(1) {
+        transform: translateX(150%);
+        transition-delay: 0.125s;
+    }
+
+    .nav__menu:hover .nav__line:nth-of-type(2) {
+        transform: rotate(45deg);
+        width: 40px;
+    }
+
+    .nav__menu:hover .nav__line:nth-of-type(3) {
+        transform: translateY(0) rotate(315deg);
+        width: 40px;
+        transition-delay: .3s;
+    }
+
+    .series__item:nth-of-type(2) .series__banner {
+        object-position: 0 -132px;
+    }
+
+    .series__item:nth-of-type(2) {
+        grid-row: 1 span;
+        grid-column: 4 span;
+    }
+    .series__item:nth-of-type(3),
+    .series__item:nth-of-type(4), 
+    .series__item:nth-of-type(5),
+    .series__item:nth-of-type(6) {
+        grid-column: 2 span;
+    }
+
+}   /* Ipad */
+/* @media screen and ( max-width: 736px){}   Phone */
+/* @media screen and ( max-width: 734px){}   Phone */
+/* @media screen and ( max-width: 684px){}   Phone */
+/* @media screen and ( max-width: 667px){}   Phone */
+@media screen and ( max-width: 572px){
+
+    .header__banner {
+        object-position: 88%;
+    }
+
+    .header__title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .films__card {
+        max-width: unset;
+    }
+
+    .films__card:nth-of-type(1) .films__banner {
+        object-position: 0 12%;
+    }
+
+    .films__content-txt {
+        text-align: center;
+    }
+
+    .heade__txt {
+        margin-bottom: 30px;
+    }
+
+    .premier__content {
+        background: unset;
+    }
+
+    .premier__content-txt {
+        color: var(--text);
+    }
+
+    .series__item:nth-of-type(2) .series__banner {
+        object-position: 0 -97px;
+    }
+
+    .series__item:nth-of-type(3),
+    .series__item:nth-of-type(4), 
+    .series__item:nth-of-type(5),
+    .series__item:nth-of-type(6) {
+        grid-column: 4 span;
+    }
+
+}   /* Phone */
+
+/* @media screen and ( max-width: 540px){}   Phone */
+@media screen and ( max-width: 414px){
+    .header__title {
+        font-size: 40px;
+    }
+
+    .header__txt {
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        max-width: 130px;
+        padding: 12px 0;
+    }
+
+    .premier__banner {
+        width: 98%;
+    }
+
+    .footer__apps {
+        column-gap: unset;
+        flex-wrap: wrap;
+        row-gap: 11px;
+    }
+    
+    .series__content-title {
+        font-size: 36px;
+    }
+
+    .series__item:nth-of-type(2) .series__banner {
+        object-position: 0 -67px;
+    }
+    
+    .footer__txt {
+        text-align: center;
+    }
+
+
+    
+
+}   /* Phone */
+
+/* @media screen and ( max-width: 375px){}   Phone */
+/* @media screen and ( max-width: 320px){}   Phone */
+
+
+@media screen and (min-width: 540px) and (max-width: 920px) {
+    
+}
